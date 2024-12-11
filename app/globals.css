@@ -5,8 +5,10 @@
 :root {
 	--color-brand-primary: #ff00d5;
 	--color-text-tertiary: #fff;
+	--color-brand-primary-hover: #96007d;
+	--color-brand-primary-active: #5e014e;
 }
 
 body {
-  font-family: Inter, sans-serif;
+	font-family: Inter, sans-serif;
 }
