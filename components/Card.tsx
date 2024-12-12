@@ -63,7 +63,10 @@ export default function Card({
 				)}
 			</div>
 
-			<footer className="mt-auto flex justify-end gap-2 p-4 relative z-10">
+			<div
+				id="card-footer"
+				className="mt-auto flex justify-end gap-2 p-4 relative z-10"
+			>
 				{secondaryAction && (
 					<Button
 						color={secondaryAction.color}
@@ -82,7 +85,7 @@ export default function Card({
 						{primaryAction.label}
 					</Button>
 				)}
-			</footer>
+			</div>
 		</div>
 	);
 }
