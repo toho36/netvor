@@ -54,7 +54,6 @@ export default function Card({
 
 			<div className="p-4 relative z-10">
 				<h3 className="text-lg font-bold group-hover:underline focus:outline-none">
-					{/* Direct title link */}
 					<Link href={titleLink} className="focus:underline">
 						{title}
 					</Link>
@@ -65,16 +64,6 @@ export default function Card({
 			</div>
 
 			<footer className="mt-auto flex justify-end gap-2 p-4 relative z-10">
-				{/* Ensure the primary action is first focusable */}
-				{primaryAction && (
-					<Button
-						color={primaryAction.color}
-						href={primaryAction.link}
-						onClick={handleButtonClick}
-					>
-						{primaryAction.label}
-					</Button>
-				)}
 				{secondaryAction && (
 					<Button
 						color={secondaryAction.color}
@@ -82,6 +71,15 @@ export default function Card({
 						onClick={handleButtonClick}
 					>
 						{secondaryAction.label}
+					</Button>
+				)}
+				{primaryAction && (
+					<Button
+						color={primaryAction.color}
+						href={primaryAction.link}
+						onClick={handleButtonClick}
+					>
+						{primaryAction.label}
 					</Button>
 				)}
 			</footer>
